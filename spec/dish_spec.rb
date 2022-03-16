@@ -11,13 +11,13 @@ RSpec.describe Dish do
   end
 
   describe "#name" do
-    it "should return the dishe's name" do
+    it "should return the dish's name" do
       expect(dish.name).to eq("Fish and chips")
     end
   end
 
   describe "#price" do
-    it "should return the dishe's price" do
+    it "should return the dish's price" do
       expect(dish.price).to eq(Money.from_cents(1000, "GBP"))
     end
   end
