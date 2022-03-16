@@ -1,7 +1,7 @@
 require "dish"
 
 RSpec.describe Dish do
-  let(:dish) { Dish.new("Fish and chips", Money.from_cents(1000, "GBP")) }
+  subject(:dish) { Dish.new("Fish and chips", Money.from_cents(1000, "GBP")) }
   
   describe "#initialize" do
     it "should accept a name (string) and a price (money) as arguments" do
