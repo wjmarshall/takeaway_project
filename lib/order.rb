@@ -1,5 +1,5 @@
 class Order
-  attr_reader :dishes, :total_price
+  attr_reader :dishes
 
   def initialize
     @dishes = {}
