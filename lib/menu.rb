@@ -10,7 +10,9 @@ class Menu
   end
 
   def format
-    formatted = @dishes.map { |dish| "#{dish.name}: #{dish.price.format}" }
+    formatted = @dishes.map do |dish| 
+      "#{dish.name}: #{dish.price.format}"
+    end
     formatted.join("\n")
   end
 
